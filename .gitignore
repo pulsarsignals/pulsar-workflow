@@ -1,0 +1,23 @@
+# Credentials — never commit
+.token
+*.token
+.env
+.env.*
+*.pem
+*.key
+credentials*
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Local scratch / backups
+*.bak
+*.bak_*
+scratch/
+tmp/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
