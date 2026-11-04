@@ -19,6 +19,19 @@ per-stock datasets.
 | [Indicator reference](docs/indicator-reference.md) | Exact formulas and periods for every published indicator |
 | [Data coverage](docs/data-coverage.md) | Universe, sources, update schedule, freshness policy |
 
+## Monthly reports
+
+Automatically regenerated after each weekly backtest run, with a machine-readable CSV alongside:
+
+| Month | Report | Data |
+|---|---|---|
+| 2026-11 | [Signal backtest — 2026-11](reports/2026-11-signal-backtest.md) | [csv](data/signal-results-2026-11.csv) |
+
+Index of all reports: [reports/index.md](reports/index.md)
+
+Each report states the sample size, win rate, median, trimmed mean and quartiles for eight signals at
+three horizons — including the findings that do not favour the signals.
+
 ---
 
 ## At a glance
