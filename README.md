@@ -1,46 +1,48 @@
-# pulsar-workflow
+# PulsarSignals — Public Feature Documentation
 
-## Project Overview
+PulsarSignals.com is a US equities research site built around **end-of-day technical readings and
+verifiable, side-by-side comparison**. This repository is the public, plain-English documentation of
+what the site does, how its features work, and how its figures are produced.
 
-`pulsar/workflow` is the accompanying GitHub repository for `pulsarsignals.com`. This repository aims to open-source and showcase the core code and workflows that power the `pulsarsignals.com` website. `pulsarsignals.com` is a platform dedicated to providing in-depth stock analysis and predictions, designed to equip investors with data-driven insights for more informed decision-making.
-
-Through this repository, we aim to enhance transparency and provide the community with a pathway to understand and potentially contribute to our analytical methodologies and technical foundation.
-
-## Website Feature Highlights
-
-`pulsarsignals.com` offers the following key features and information:
-
-* **Comprehensive Stock Analysis**: Provides detailed analysis for a wide range of stocks, including real-time prices, market capitalization, P/E ratios, and other critical metrics.
-* **Trading Signals**: Delivers buy/sell signals for stocks, complete with confidence levels, support and resistance levels, and stop-loss suggestions.
-* **Analyst Ratings**: Aggregates and displays the distribution of analyst ratings (Strong Buy, Buy, Hold, Sell, Strong Sell).
-* **Stock Price Predictions**: Offers quarterly and annual stock price forecasts based on various scenarios (bullish, base, bearish), along with corresponding probabilities and price targets.
-* **Technical Analysis**: Conducts in-depth analysis of trend identification, momentum measurement, and volatility measurement, based on a variety of technical indicators (e.g., EMA, MACD, ADX, RSI, OBV, Stochastic, CCI, ATR, Bollinger Bands).
-* **Risk Management & Potential Reversals**: Provides risk management advice and identifies potential reversal signals using technical indicators.
-* **Holder List**: Shows major institutional and mutual fund holdings, revealing the key owners of a stock.
-* **Company Profile & Financial Overview**: Offers essential company information, recent stock actions (dividends, splits), and links to financial statements.
-
-## Visit the Website
-
-You can visit our main website to learn more: [pulsarsignals.com](https://pulsarsignals.com)
-
-To see an example of a specific stock analysis page, please visit a link formatted similarly to this: [Stock Analysis Example](https://pulsarsignals.com/stock_analysis/GOOG)
+It is not the site's source code. It contains no operational details, no credentials, and no
+per-stock datasets.
 
 ---
 
-## Project Structure (To Be Detailed)
+## Feature index
 
-This section will provide a detailed overview of the `pulsar/workflow` repository's directory structure and main components.
+| Document | Feature covered |
+|---|---|
+| [Company pages](docs/company-pages.md) | Technical readings, signals, price levels, fundamentals, holders, corporate actions |
+| [Comparison pages](docs/comparison-pages.md) | Side-by-side multi-symbol comparison and signal comparison |
+| [Signal backtesting](docs/backtesting.md) | How signal performance is measured and how to read the results |
+| [Indicator reference](docs/indicator-reference.md) | Exact formulas and periods for every published indicator |
+| [Data coverage](docs/data-coverage.md) | Universe, sources, update schedule, freshness policy |
+
+---
+
+## At a glance
+
+- **Company pages** give a complete technical read for a single ticker: RSI, MACD, moving averages,
+  Bollinger Bands, ATR, volume and trend indicators, an aggregated signal with a stated confidence,
+  ATR-derived support and resistance levels, financial statements, institutional holders and corporate
+  actions.
+- **Comparison pages** put up to eight symbols in one table, and show how the same signals have
+  historically behaved on each of them.
+- **A backtest** measures how eight conventional signals performed across the covered universe. The
+  full results, including unfavourable ones, are published on the site.
+- **A methodology page** documents the formulas and periods behind every figure.
 
 ---
 
-## How to Contribute (To Be Detailed)
+## Data policy
 
-We welcome contributions from the community! This section will provide guidelines for contributing and our code of conduct.
-
----
-
-## License (MIT)
-
-This project will be released under the MIT License.
+All prices are **end-of-day** and refreshed after each US market close. The site does not provide
+real-time quotes. Figures are descriptive statistics about historical price behaviour, not forecasts
+and not investment advice.
 
 ---
+
+## Licence
+
+MIT — see [LICENSE](LICENSE). Documentation text only; no data or application code is included here.
