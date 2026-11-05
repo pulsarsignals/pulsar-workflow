@@ -27,10 +27,14 @@ Automatically regenerated after each weekly backtest run, with a machine-readabl
 |---|---|---|
 | 2026-11 | [Signal backtest — 2026-11](reports/2026-11-signal-backtest.md) | [csv](data/signal-results-2026-11.csv) |
 
-Index of all reports: [reports/index.md](reports/index.md)
+Index of all reports: [reports/index.md](reports/index.md) · How the numbers are produced, and the
+known data artefacts: [reports/README.md](reports/README.md)
 
 Each report states the sample size, win rate, median, trimmed mean and quartiles for eight signals at
-three horizons — including the findings that do not favour the signals.
+three horizons — including the findings that do not favour the signals. The reports state the median as
+the primary statistic, because small-cap price history contains extreme split-adjustment artefacts that
+make the arithmetic mean meaningless; the [reports README](reports/README.md) explains this and each
+limitation in full.
 
 ---
 
