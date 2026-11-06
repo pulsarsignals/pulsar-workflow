@@ -64,6 +64,8 @@ resistance always above it. See [Indicator reference](indicator-reference.md) fo
 
 ## 4. Fundamentals
 
+### 4.1 Financial statements
+
 Three financial statement groups are shown for the most recent reported periods, with quarterly and
 annual views:
 
@@ -74,6 +76,36 @@ annual views:
 Figures come from company filings distributed by the site's market data provider. Where a metric is
 not applicable (for example a P/E ratio for a company with negative earnings, or a dividend yield for
 a non-payer) the page shows `N/A` rather than a misleading number.
+
+### 4.2 Profitability and revenue trend
+
+Up to eight recent reported quarters are reduced to four comparable figures per quarter:
+
+| Column | Definition |
+|---|---|
+| Revenue | Reported total revenue for the period |
+| Gross margin | Gross profit ÷ revenue |
+| Operating margin | Operating income ÷ revenue |
+| Net margin | Net income ÷ revenue |
+
+A trailing-twelve-month snapshot above the table shows gross margin, EBITDA margin, net margin and
+year-over-year revenue growth.
+
+Rules:
+
+- Ratios are computed from reported income statements sourced from **SEC EDGAR XBRL**, not copied
+  from a third-party summary.
+- Where a period has both quarterly and annual rows for the same date, the quarterly row is preferred.
+- A quarter with zero or missing revenue is skipped rather than producing a meaningless percentage.
+- Fewer than two reported periods means no trend table at all.
+- The table shows the three most recent quarters by default; the remaining rows stay in the page and
+  are revealed by a client-side "Show all quarters" control.
+
+### 4.3 Dividend summary
+
+For dividend payers the Stock Actions card leads with dividend yield, payout ratio, the sum of the last
+four dividends and the most recent dividend (date and amount). Non-payers have no dividend block — no
+zero and no placeholder.
 
 ---
 
@@ -113,6 +145,10 @@ is used on comparison pages to compare symbols side by side. The market-wide ver
 Company pages emit `WebPage` / `Article` JSON-LD together with `QuantitativeValue` blocks for the
 published indicator readings. When price levels are withheld due to stale data, the corresponding
 structured-data values are left empty rather than populated with incorrect numbers.
+
+A separate `Dataset` block describes the quarterly profitability table (revenue, gross/operating/net
+margin, temporal coverage), with `PropertyValue` entries for the trailing-twelve-month figures. It is
+emitted only when at least two reported periods exist.
 
 ---
 
