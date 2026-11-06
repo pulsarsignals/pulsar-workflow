@@ -13,7 +13,7 @@ per-stock datasets.
 
 | Document | Feature covered |
 |---|---|
-| [Company pages](docs/company-pages.md) | Technical readings, signals, price levels, fundamentals, holders, corporate actions |
+| [Company pages](docs/company-pages.md) | Technical readings, signals, price levels, profitability and revenue trend, dividends, holders, corporate actions |
 | [Comparison pages](docs/comparison-pages.md) | Side-by-side multi-symbol comparison and signal comparison |
 | [Signal backtesting](docs/backtesting.md) | How signal performance is measured and how to read the results |
 | [Indicator reference](docs/indicator-reference.md) | Exact formulas and periods for every published indicator |
@@ -42,8 +42,9 @@ limitation in full.
 
 - **Company pages** give a complete technical read for a single ticker: RSI, MACD, moving averages,
   Bollinger Bands, ATR, volume and trend indicators, an aggregated signal with a stated confidence,
-  ATR-derived support and resistance levels, financial statements, institutional holders and corporate
-  actions.
+  ATR-derived support and resistance levels, financial statements, a quarterly profitability and
+  revenue trend (gross, operating and net margins), a dividend summary, institutional holders and
+  corporate actions.
 - **Comparison pages** put up to eight symbols in one table, and show how the same signals have
   historically behaved on each of them.
 - **A backtest** measures how eight conventional signals performed across the covered universe. The
@@ -63,3 +64,13 @@ and not investment advice.
 ## Licence
 
 MIT — see [LICENSE](LICENSE). Documentation text only; no data or application code is included here.
+
+---
+
+## Changelog
+
+- **2026-11-07** — Company pages: added a quarterly profitability and revenue trend (gross, operating
+  and net margins, derived from SEC EDGAR XBRL income statements), a dividend summary (yield, payout
+  ratio, last four dividends) and a short "how it makes money" note. Long tables and long technical
+  descriptions are collapsed by default with an explicit expand control; the full content remains in
+  the page for search engines. See [Company pages](docs/company-pages.md).
