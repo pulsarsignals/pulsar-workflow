@@ -6,10 +6,10 @@
 
 | Item | Value |
 |---|---|
-| Generated | `2026-11-04T17:15:27Z` |
+| Generated | `2026-11-09T07:32:29Z` |
 | Sample start | 2024-01-01 |
-| Symbols | 6,867 |
-| Daily bars | 3,876,380 |
+| Symbols | 7,541 |
+| Daily bars | 4,205,677 |
 | Horizons | 5d, 10d, 20d |
 
 ## Results
@@ -18,40 +18,40 @@
 
 | Signal | Occurrences | Win rate | Median | Trimmed mean | P25 | P75 |
 |---|---:|---:|---:|---:|---:|---:|
-| RSI oversold recovery | 46,097 | 49.2% | +0.00% | -0.01% | -3.35% | +3.17% |
-| RSI overbought reversal | 60,744 | 50.5% | +0.05% | -0.12% | -2.69% | +2.38% |
-| MACD golden cross | 148,937 | 50.2% | +0.02% | +0.03% | -2.67% | +2.60% |
-| MACD death cross | 148,098 | 52.0% | +0.13% | +0.14% | -2.52% | +2.69% |
-| MA20/MA60 golden cross | 31,993 | 46.8% | -0.12% | -0.35% | -3.09% | +2.24% |
-| MA20/MA60 death cross | 33,350 | 49.9% | +0.00% | +0.10% | -2.70% | +2.86% |
-| Combined bullish setup | 7,982 | 52.3% | +0.18% | +0.28% | -2.82% | +3.32% |
-| Combined bearish setup | 8,814 | 54.3% | +0.28% | +0.39% | -2.02% | +2.56% |
+| RSI oversold recovery | 50,064 | 48.8% | +0.00% | -0.11% | -3.35% | +3.07% |
+| RSI overbought reversal | 64,530 | 50.2% | +0.03% | -0.11% | -2.66% | +2.35% |
+| MACD golden cross | 161,198 | 49.5% | +0.00% | -0.07% | -2.65% | +2.50% |
+| MACD death cross | 160,072 | 52.0% | +0.12% | +0.17% | -2.44% | +2.61% |
+| MA20/MA60 golden cross | 34,816 | 46.2% | -0.10% | -0.46% | -3.00% | +2.11% |
+| MA20/MA60 death cross | 36,411 | 49.5% | +0.00% | +0.09% | -2.60% | +2.72% |
+| Combined bullish setup | 8,695 | 51.3% | +0.10% | +0.18% | -2.82% | +3.16% |
+| Combined bearish setup | 9,499 | 54.4% | +0.28% | +0.37% | -1.94% | +2.49% |
 
 ### 10 trading-day horizon
 
 | Signal | Occurrences | Win rate | Median | Trimmed mean | P25 | P75 |
 |---|---:|---:|---:|---:|---:|---:|
-| RSI oversold recovery | 45,142 | 54.2% | +0.54% | +0.86% | -3.88% | +5.14% |
-| RSI overbought reversal | 60,287 | 52.4% | +0.20% | +0.03% | -3.82% | +3.53% |
-| MACD golden cross | 147,567 | 50.3% | +0.04% | +0.07% | -3.88% | +3.75% |
-| MACD death cross | 147,208 | 53.0% | +0.27% | +0.31% | -3.72% | +3.92% |
-| MA20/MA60 golden cross | 31,763 | 47.5% | -0.12% | -0.32% | -4.39% | +3.43% |
-| MA20/MA60 death cross | 32,954 | 51.1% | +0.14% | +0.34% | -3.82% | +4.31% |
-| Combined bullish setup | 7,914 | 52.7% | +0.28% | +0.25% | -4.32% | +4.54% |
-| Combined bearish setup | 8,783 | 54.2% | +0.40% | +0.53% | -3.16% | +3.74% |
+| RSI oversold recovery | 49,149 | 53.5% | +0.43% | +0.66% | -3.93% | +4.98% |
+| RSI overbought reversal | 64,084 | 52.2% | +0.18% | +0.04% | -3.77% | +3.49% |
+| MACD golden cross | 159,611 | 49.7% | +0.00% | -0.04% | -3.83% | +3.60% |
+| MACD death cross | 159,030 | 52.8% | +0.24% | +0.32% | -3.62% | +3.79% |
+| MA20/MA60 golden cross | 34,531 | 47.0% | -0.11% | -0.47% | -4.30% | +3.22% |
+| MA20/MA60 death cross | 35,980 | 50.7% | +0.09% | +0.32% | -3.69% | +4.10% |
+| Combined bullish setup | 8,607 | 51.8% | +0.19% | +0.12% | -4.27% | +4.34% |
+| Combined bearish setup | 9,460 | 53.9% | +0.34% | +0.49% | -3.03% | +3.60% |
 
 ### 20 trading-day horizon
 
 | Signal | Occurrences | Win rate | Median | Trimmed mean | P25 | P75 |
 |---|---:|---:|---:|---:|---:|---:|
-| RSI oversold recovery | 43,429 | 54.1% | +0.79% | +1.19% | -6.46% | +7.33% |
-| RSI overbought reversal | 59,655 | 52.3% | +0.29% | +0.01% | -5.70% | +5.01% |
-| MACD golden cross | 144,800 | 50.6% | +0.09% | +0.15% | -6.03% | +5.34% |
-| MACD death cross | 144,908 | 53.6% | +0.45% | +0.77% | -5.23% | +5.65% |
-| MA20/MA60 golden cross | 31,391 | 48.8% | -0.04% | -0.07% | -6.47% | +5.09% |
-| MA20/MA60 death cross | 32,003 | 51.7% | +0.24% | +0.58% | -5.81% | +6.17% |
-| Combined bullish setup | 7,763 | 49.0% | -0.05% | -0.39% | -7.01% | +5.76% |
-| Combined bearish setup | 8,660 | 54.1% | +0.54% | +0.56% | -4.70% | +5.07% |
+| RSI oversold recovery | 47,258 | 53.7% | +0.68% | +0.92% | -6.45% | +7.09% |
+| RSI overbought reversal | 63,314 | 52.1% | +0.27% | +0.04% | -5.66% | +4.93% |
+| MACD golden cross | 156,677 | 50.0% | +0.01% | -0.01% | -5.97% | +5.08% |
+| MACD death cross | 156,710 | 53.3% | +0.39% | +0.71% | -5.15% | +5.44% |
+| MA20/MA60 golden cross | 34,088 | 48.1% | -0.08% | -0.32% | -6.40% | +4.80% |
+| MA20/MA60 death cross | 35,013 | 51.5% | +0.19% | +0.61% | -5.56% | +5.92% |
+| Combined bullish setup | 8,444 | 48.6% | -0.06% | -0.47% | -6.94% | +5.54% |
+| Combined bearish setup | 9,347 | 53.6% | +0.46% | +0.44% | -4.57% | +4.88% |
 
 ## How to read this
 
